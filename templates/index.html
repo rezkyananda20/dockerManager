@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Docker and service manager </title>
+	</head>
+	<body>
+		<form method='POST' action='http://localhost:5000/ups' enctype="multipart/form-data">
+			upload file anda disini
+			<input type='file' name='file'>
+			<input type='submit' value='kirim'>
+		</form>
+		service :
+		{{hasilService}}
+		<form method="POST" action='http://localhost:5000/cmd'>
+			<input type="submit" value="see service" name="seeService">
+		</form>
+</html>
